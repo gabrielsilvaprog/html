@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML5</title>
+</head>
+<body>
+<h1>imagem dinâmica</h1>
+<p>aumente e diminua o tamanho da janela para saber como fica o site</p>
+<picture>
+    
+    
+    
+    <source media="(max-width: 750px)" srcset="imagens/imgpequena.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/imgmedia.png" type="image/png">
+    <img src="imagens/imggrande.png" alt="imagem flexivel">
+
+
+</picture>
+<h1>reproduzindo audios </h1>
+   
+
+    <audio preload="metadata" controls loop>
+        <source src="media/Xylophone.mp3" ></audio>
+    <p>Caso seu navegador não seja compativel com este audio
+    <a href="media/Xylophone.mp3">clique aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>

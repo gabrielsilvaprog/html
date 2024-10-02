@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(41, 41, 41); color: white;
+    font: normal 1em arial, helvetica, sans-serif; text-align: justify;
+}
+h1{
+color: rgb(131, 131, 131);
+}
+
+#p{ text-align: center; color: rgb(235, 235, 235); font-weight: 900; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color: rgb(15, 15, 15);
+
+}
+
+
+h2{ color: rgb(80, 80, 80);
+
+}
+.basic{
+    color: rgb(85, 207, 85);
+}
+.int{
+    color: rgb(212, 212, 52);
+}
+.avan{
+    color: rgb(223, 25, 25);
+}
+.subt{
+    font-weight: lighter; color: rgb(189, 189, 189); background-color: rgba(128, 128, 128, 0.178);
+}
