@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrslização vertical</title>
+<style>
+body{
+    background: black;
+}
+#container{
+    position: relative; /*position é importante */
+height: 91vh;
+padding: 10px;
+background-color: purple;
+background-image: url(imagens/wallpaper004.jpg);
+background-size: 100% 100%;
+}
+#content{
+    position: absolute;
+height: 200px;
+width: 400px;
+background-color: crimson;
+left: 50%;
+top: 50%;
+background-image: url(imagens/wallpaper002.jpg);
+background-size: 100% 100%;
+transform: translate(-50%, -50%);
+
+
+}
+
+</style>
+</head>
+
+<body>
+<section id="container">
+    <article id="content">
+
+    </article>
+</section>
+
+
+
+    
+</body>
+</html>
