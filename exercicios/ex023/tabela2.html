@@ -8,6 +8,7 @@
 table{
     border: 1px solid black;
     width: 300px; margin: auto;
+    position: relative;
     
 }
 tr, th{
@@ -43,6 +44,12 @@ tbody tr:nth-child(2n){
 
 body{
     background-color: rgb(238, 238, 238);
+}
+thead > tr >th {
+    position: sticky;
+    top: -1px;
+    background-color: grey;
+
 }
     </style>
 </head>
@@ -279,6 +286,7 @@ body{
 <tr><th scope="row">Total de Habitantes</th><th><strong>212 583 720</strong></th></tr>
         </tfoot>
     </table>
+   
 
 
 
