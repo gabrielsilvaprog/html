@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+body{ background-color: rgb(255, 242, 242);
+
+}
+table{
+    margin: auto;
+    width: 500px;border-collapse: collapse;
+
+
+}
+tr{border: 2px solid rgb(32, 32, 32);
+
+}
+th{ border: 2px solid rgb(32, 32, 32); 
+
+}
+caption{
+
+}
+thead{ color: white; background-color: rgb(41, 41, 41);
+
+}
+tbody{ border-collapse: collapse;
+
+}
+.categoria{color: white; background-color: rgb(41, 41, 41);
+
+
+}
+.nome{
+    background-color: rgb(146, 146, 146);
+}
+tbody>tr:hover{
+    background-color: lightgray;
+}
+    </style>
+</head>
+<body>
+    <table>
+<thead>
+<tr>
+  <th scope="col">
+Grupo
+  </th>
+ <th scope="col"> Nomes</th>
+ <th colspan="3" scope="colgroup"> Filmes</th>
+</tr>
+
+</thead>
+<tr>
+    <th rowspan="3" class="categoria" scope="rowgroup">Mulheres</th>
+    <th class="nome">Ana maria</th>
+    <th>Alien</th>
+    <th>Rambo</th>
+    <th>Vingadores</th>
+</tr>
+<tr>
+    <th class="nome">Beatriz</th>
+    <th>Hulk</th>
+    <th>Inception</th>
+    <th>Batman</th>
+</tr>
+<tr>
+    <th class="nome">Carla</th>
+    <th>Oblivion</th>
+    <th>Matrix</th>
+    <th>Big hero</th>
+</tr>
+<tr>
+    <th rowspan="3" class="categoria" scope="rowgroup">Homens</th>
+    <th class="nome">Bruno</th>
+    <th>Intocáveis</th>
+    <th>Amnésia</th>
+    <th>Gladiador</th>
+</tr>
+<tr>
+    <th class="nome">Daniel</th>
+    <th>Wall-E</th>
+    <th>Old</th>
+    <th>Dangal</th>
+</tr>
+<tr>
+    <th class="nome">Fabiano</th>
+    <th>Star Wars</th>
+    <th>Tax Driver</th>
+    <th>Toy Story</th>
+</tr>
+
+
+
+
+
+    </table>
+
+
+
+
+
+</body>
+</html>
