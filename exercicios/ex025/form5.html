@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+<style>
+fieldset{
+ background-color: rgb(255, 255, 255);
+   color: black; 
+}
+
+
+body{
+    background-color: rgb(41, 41, 41); color: white;
+}
+
+legend{
+    color: crimson; background-color: rgb(233, 188, 233);
+}
+
+</style>
+
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="get"></form>
+<fieldset>
+    <legend>Faixa etária</legend>
+<input type="radio" name="fe" id="ife12" value="-12"> <label for="ife12">até 12 aos</label> <br>
+<input type="radio" name="fe" id="ife13" value="13/17"> <label for="ife13">13 a 17 </label><br>
+<input type="radio" name="fe" id="ife18" value="18/30"> <label for="ife18">18 a 30 </label><br>
+<input type="radio" name="fe" id="ife31" value="31+"> <label for="ife31">31 acima </label><br>
+</fieldset>
+
+<fieldset>
+<legend>Gênero de jogos favoritos</legend>
+<input type="checkbox" name="gjrpg" id="gjrpg" ><label for="gjrpg">RPG</label>  <br>
+<input type="checkbox" name="gjSouls" id="gjSouls" ><label for="gjSouls">Souls Like</label><br>
+<input type="checkbox" name="gjPuz" id="gjPuz" ><label for="gjPuz">Puzzle</label><br>
+<input type="checkbox" name="gjSurvival" id="gjSurvival" ><label for="gjSurvival">survival</label><br>
+<input type="checkbox" name="gjMun" id="gjMun" ><label for="gjMun">Mundo Aberto</label><br>
+
+
+</fieldset>
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Apagar">
+</p>
+
+
+</body>
+</html>
