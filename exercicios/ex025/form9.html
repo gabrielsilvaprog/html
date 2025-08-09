@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form9</title>
+</head>
+<style>
+body{
+    background-color: rgb(41, 41, 41); color: white;
+}
+
+
+input{
+    border-radius: 10px;}
+
+
+</style>
+
+
+
+
+<body>
+    
+<form action="cadastro.php" method="get"> 
+<h1>formulário</h1>
+<p>
+    <label for="num1" >Número 1</label>
+    <input type="range" id="inum1" name="num1" min="0" max="1000" value="inum1"
+    oninput="ival.innerHTML = Number(inum1.value)"   >  
+    <output id="ival"> 0 </output>
+
+</p>
+
+<p>
+    <label for="num2" >Número 2</label>
+    <input type="range" id="inum2" name="num2" min="0" max="1000" value="inum2"
+    oninput="ival2.innerHTML = Number(inum2.value)" >
+
+</p>
+
+
+
+
+
+
+
+
+
+<p>
+<input type="submit" id="isubmit" name="enviar" value="enviar">
+<input type="reset" id="ireset" name="limpar" value="limpar">
+</p>
+
+
+
+
+    
+</body>
+</html>

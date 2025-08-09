@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form8</title>
+</head>
+
+<style>
+body{
+    background-color: rgb(41, 41, 41); color: white;
+}
+
+input{
+    border-radius: 10px;}
+
+
+
+</style>
+
+
+
+
+<body>
+    
+<form action="cadastro.php" method="get"> 
+<h1>formulário</h1>
+<p>
+    <label for="in1" >Número 1</label>
+    <input type="number" name="n1" id="in1" min="0" max="1000" required
+     oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+</p>
+
+<p>
+    <label for="in2" >Número 2</label>
+    <input type="number" value="in2" name="n2" id="in2" min="0" max="1000" required
+    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+</p>
+
+<p>
+    <label for="in3" >Número 3</label>
+    <input type="number" value="in3" name="n3" id="in3" min="0" max="1000" required
+    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+
+</p>
+
+<p>
+<label for="isoma">soma</label>
+<output id="isoma" name="soma"></output>
+
+
+</p>
+
+
+
+<p><input type="submit" id="isubmit" name="enviar" value="enviar">
+
+<input type="reset" id="ireset" name="limpar" value="limpar">
+
+</p>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>
