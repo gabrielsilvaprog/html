@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+
+
+</head>
+<body>
+    <h1>Reproduzindo áudios</h1>
+<audio src="midia/happy-mistake.mp3" controls></audio>
+<!--acima temos uma maneira simples de inserir áudio-->
+<p>varias fontes abaixo</p>
+<audio controls preload="metadata">
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    <source src="midia/happy-mistake.ogg" type="audio/ogg"> <!--exemplo-->
+    <source src="midia/happy-mistake.wav" type="audio/wav"> <!--exemplo-->
+    <p>Infelizmente seu navegador não foi capaz de carregar o áudio. 
+    <a href="midia/happy-mistake.mp3">Clique aqui para download do arquivo.</a></p>
+</audio>
+
+</body>
+</html>
