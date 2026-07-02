@@ -13,13 +13,31 @@
         background-size:  cover;
     }
    div{
-    margin: auto;
-    height: 500px;
+   
     
-    background-image: url(imagens/astronauta.png);
+    
+   }
+
+   #container{
+ margin: auto;
+    height: 500px;
+    border: solid 1px black;
+   }
+   #conteudo{
+background-image: url(imagens/astronauta.png);
    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 30vh;
+   
+    background-size: 50vh;
+    height: 600px;
+    width: 600px;
+    position: absolute ;
+    left: 50%;
+    top:50% ;
+    
+    
+   
+    transform: translate(-50% ,-50%);
    }
 </style>
 </head>
@@ -29,9 +47,9 @@
 
 <body>
    
-<div>
-teste
-</div>
+
+<div id="conteudo">   </div>
+
 
 
 </body>
