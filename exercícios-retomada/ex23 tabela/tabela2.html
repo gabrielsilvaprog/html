@@ -8,6 +8,7 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            margin: auto;
         }
 td{
     border: solid 1px black;
@@ -16,7 +17,7 @@ td{
     text-align: center;
 }
 th{
-    border: 3px solid black;
+    border: 1px solid black;
     background-color: rgba(128, 128, 128, 0.459);
      
 }
@@ -25,16 +26,40 @@ tr:hover{
     
     
 }
+caption{
+
+text-align: left;
+font-weight: bold;
+font-size: 1.2em;
+}
+h1{
+    text-align: center;
+}
+tbody > tr:nth-child(2n){
+background-color: lightgray;
+}
+tbody > tr:hover{
+ background-color: rgb(148, 204, 197);
+}
+
+th{
+    position: sticky;
+    top: 0;
+    
+    background-color: rgb(128, 128, 128);
+}
 
     </style>
 </head>
 <body>
     <h1>anatomia de tabelas grandes</h1>
-    <h2>países com maior população</h2>
+    
     <table>
+        <caption>países por maior população</caption>
+    
         <thead> 
 
-<tr>   <th>Posição </th> <th>país </th> <th>Estimativa da ONU </th>    </tr>
+<tr>   <th scope="col">Posição </th> <th scope="col">país </th> <th scope="col">Estimativa da ONU </th>    </tr>
 
         </thead>
         <tbody>
@@ -52,9 +77,9 @@ tr:hover{
 
         </tbody>
 
-        <tfoot>
-
-        </tfoot>
+        
     </table>
+    
+
 </body>
 </html>
