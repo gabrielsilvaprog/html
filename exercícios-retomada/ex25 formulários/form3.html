@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+input{
+    margin: 3px;
+}
+spam{
+    color: rgb(158, 0, 0);
+}
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" >
+<div>
+<label for="inome">Nome <spam>*</spam>
+</label>
+    <input type="text" id="inome" name="nome" placeholder="coloque o nome"
+    required>
+
+    <label for="inota" >Nota <spam>*</spam> </label>
+    <input type="number" name="nota" id="inota" required placeholder="Média"
+  min="0" max="100"  step=".5" >
+</div>
+<div>
+    <label for="idata">Período<spam>*</spam> </label>
+    <input type="month" name="data" id="idata" riquered>
+</div>
+<div>
+    <label for="idia">Data<spam>*</spam> </label>
+    <input type="date" name="date" id="idate" riquered>
+
+    <label for="ihora">Horário<spam>*</spam> </label>
+    <input type="time" name="hora" id="ihora" riquered>
+</div>
+<input type="submit" value="Enviar" > <input type="reset" value="Limpar">
+
+
+    </form>
+    
+</body>
+</html>
