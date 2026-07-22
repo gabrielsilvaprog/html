@@ -15,27 +15,33 @@ spam{
 </head>
 <body>
     <form action="cadastro.php" method="get" >
-<div>
-<label for="inome">Nome <spam>*</spam>
-</label>
-    <input type="text" id="inome" name="nome" placeholder="coloque o nome"
-    required>
-
-    <label for="inota" >Nota <spam>*</spam> </label>
-    <input type="number" name="nota" id="inota" required placeholder="Média"
-  min="0" max="100"  step=".5" >
-</div>
-<div>
-    <label for="idata">Período<spam>*</spam> </label>
-    <input type="month" name="data" id="idata" riquered>
-</div>
-<div>
-    <label for="idia">Data<spam>*</spam> </label>
-    <input type="date" name="date" id="idate" riquered>
-
-    <label for="ihora">Horário<spam>*</spam> </label>
-    <input type="time" name="hora" id="ihora" riquered>
-</div>
+<fieldset>
+    <legend>Dados pessoais</legend>
+    <div>
+    <label for="inome">Nome <spam>*</spam>
+    </label>
+        <input type="text" id="inome" name="nome" placeholder="coloque o nome"
+        required>
+    
+        <label for="inota" >Nota <spam>*</spam> </label>
+        <input type="number" name="nota" id="inota" required placeholder="Média"
+      min="0" max="100"  step=".5" >
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Tempo</legend>
+    <div>
+        <label for="idata">Período<spam>*</spam> </label>
+        <input type="month" name="data" id="idata" riquered>
+    </div>
+    <div>
+        <label for="idia">Data<spam>*</spam> </label>
+        <input type="date" name="date" id="idate" riquered>
+    
+        <label for="ihora">Horário<spam>*</spam> </label>
+        <input type="time" name="hora" id="ihora" riquered>
+    </div>
+</fieldset>
 <input type="submit" value="Enviar" > <input type="reset" value="Limpar">
 
 
