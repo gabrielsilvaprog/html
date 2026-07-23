@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+    <style>
+        input{
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="senha.php" method="post">
+<div>
+    <label for="n1">Número um</label>
+<input type="number" min="0" max="100" id="n1"
+oninput="isoma.innerHTML = Number(n1.value) + Number(n2.value)">
+
+</div>
+<div>
+    <label for="n2">Número dois</label>
+<input type="number" min="0" max="100" id="n2"
+oninput="isoma.innerHTML = Number(n1.value) + Number(n2.value)">
+
+</div>
+<div>
+    <label for="isoma">Soma</label>
+    <output id="isoma" > 
+    </output>
+</div>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+
+
+    </form>
+</body>
+</html>
